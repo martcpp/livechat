@@ -9,6 +9,7 @@ anyhow = "1.0"
 futures = "0.3.30"
 tokio-codec = "0.1.2"
 tokio-util = { version = "0.7", features = ["codec"] }
+fastrand = "2.1.0"
 
 [[bin]]
 name = "livechat"
