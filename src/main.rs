@@ -11,7 +11,7 @@ mod client;
 
 // use tokio::{net::{TcpListener, TcpStream}, sync::broadcast::{self, Sender}};
 
-const HELP:&str = include_str!("help.txt");
+const HELP:&str = include_str!("files/help.txt");
 //const ADDRESS:&str = "192.168.0.103:42063";
 
 

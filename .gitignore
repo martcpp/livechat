@@ -1,4 +1,5 @@
 /target
-*client.rs
-*helper.rs
-*more.rs
+
+src/client.rs
+src/helper.rs
+src/more.rs
