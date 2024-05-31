@@ -4,11 +4,11 @@ use tokio::net:: {TcpListener,TcpStream};
 use tokio_util::codec::{FramedRead, FramedWrite, LinesCodec};
 use tokio::sync::broadcast::{self, Sender};
 use tokio::select;
-use client::random_name;
+use random::random_name;
 use dotenv::dotenv;
 use std::env;
 
-mod client;
+mod random;
 
 
 // use tokio::{net::{TcpListener, TcpStream}, sync::broadcast::{self, Sender}};
