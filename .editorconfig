@@ -9,7 +9,7 @@ indent_style = space
 indent_size = 4
 
 [*.rs]
-max_line_length = 80
+max_line_length = 8
 
 [*.txt]
 insert_final_newline = false
