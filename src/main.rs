@@ -1,3 +1,4 @@
+use std::{collections::HashSet, sync::{Arc, Mutex}};
 use futures::{SinkExt,StreamExt};
 use tokio::net:: {TcpListener,TcpStream};
 // use tokio::{net::{TcpListener,TcpStream}, sync::broadcast};
@@ -16,6 +17,41 @@ mod random;
 
 const HELP:&str = include_str!("files/help.txt");
 //const ADDRESS:&str =env::var("LOCALHOST").expect(msg:"LOCALHOST must be set in .env file");
+
+#[derive(Clone)]
+struct Name{
+
+    name:Arc<Mutex<HashSet<String>>>
+
+}
+
+impl Name {
+
+    fn new() -> Self {
+        Self {
+            name:Arc::new(Mutex::new(HashSet::new()))
+        }
+        
+    }
+
+    fn insert(&self, name: String) -> bool {
+        let mut set = self.name.lock().unwrap();
+        set.insert(name)
+    }
+
+    fn unqiue_name(&self, name: String) -> String {
+        let mut set = self.name.lock().unwrap();
+        let mut guard = name;
+        while set.contains(&name){
+            name.push('_');
+        }
+        set.insert(name.clone());
+        name
+    }
+}
+
+
+
 
 
 
