@@ -1,3 +1,5 @@
+#![allow(dead_code,unused_imports)]
+
 pub const ADJECTIVES: [&'static str; 613] = [
     "Graceful",
     "High",
