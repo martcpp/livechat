@@ -1,3 +1,5 @@
+#![allow(dead_code,unused_imports)]
+
 pub const ANIMALS: [&'static str; 222] = [
     "Dingo",
     "Gopher",
