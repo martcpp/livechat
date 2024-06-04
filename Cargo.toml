@@ -13,7 +13,10 @@ fastrand = "2.1.0"
 dotenv = "0.15.0"
 ratatui = "0.26.3" 
 crossterm = "0.27.0"
-
+warp = "0.3"
+uuid = { version = "1", features = ["v4"] } 
+serde_json = "1.0" 
+tokio-stream = { version = "0.1", features = ["sync"] }  
 
 [[bin]]
 name = "livechat"
@@ -21,11 +24,11 @@ path = "src/main.rs"
 
 [[bin]]
 name = "client"
-path = "client/server.rs"
+path = "client/"
 
 [[bin]]
 name = "test"
-path = "src/more.rs"
+path = "src/servertui.rs"
 
 [[bin]]
 name = "help"
