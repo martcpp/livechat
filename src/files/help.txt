@@ -1,5 +1,0 @@
-this a help file for chat server and
-Server commands
-  /help - prints this message
-  /quit - quits server
-  /names - prints the names of users
