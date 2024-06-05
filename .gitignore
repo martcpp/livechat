@@ -5,3 +5,5 @@ src/helper.rs
 src/more.rs
 *.env 
 client/
+src/andom.rs
+
