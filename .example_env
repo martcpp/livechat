@@ -2,5 +2,5 @@
 # note if you runing of a different host edit the localhost with the ip address
 # if run on you localhost hos just uncomment #LOCALHOST="127.0.0.1" and comment or delete LOCALHOST="YOUR_HOST ADDRESS"
 
-LOCALHOST="YOUR_HOST ADDRESS"
-#LOCALHOST="127.0.0.1"
+CHAT_SERVER_ADDRESS="YOUR_HOST ADDRESS"
+#CHAT_SERVER_ADDRESS="127.0.0.1"
